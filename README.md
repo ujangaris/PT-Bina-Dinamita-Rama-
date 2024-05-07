@@ -32,3 +32,26 @@ Currently, two official plugins are available:
         -jalankan kembali server
             npm run dev
         - akan ada tulisan merah ditengah dengan background purple
+
+### Setup colors , font & background image
+
+      Todo:
+    1.  index.css
+        - import url font oswald & roboto
+        - setup font
+    2.  tailwind.config.css
+        - setup colors
+        - setup font
+        - setup screen
+        - setup container
+        - noted : setup disini dibuat agar menjadi default dan dapat diterapkan di page manapun
+    3.  src/img/bg-hero.png
+    4.  component/Hero.jsx
+        - rafc
+        - styling page hero
+        - pasang background
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada halaman web akan ada background dengan tulisan ditengahnya
+        - jika di kecilkan pada layar apapun tulisaan akan berda ditengah
