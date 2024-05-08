@@ -55,3 +55,46 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - pada halaman web akan ada background dengan tulisan ditengahnya
         - jika di kecilkan pada layar apapun tulisaan akan berda ditengah
+
+### Navbar active
+
+      Todo:
+    1.  buat 3 page yakni:
+        - about.jsx
+        - blog.jsx
+        - contact.jsx
+        Noted: pasang id pada setiap page agar scroll dapat berfungsi
+    2.  Nav.jsx
+        - rafc
+        - buat object untuk menu yang berisikan name, target & offset
+          tampung kedalam varible links
+        - pasang properti containerStyles & gunakan pada className
+          Dengan menggunakan prop containerStyles, Anda dapat mengontrol
+          penampilan dari container tersebut, seperti warna latar belakang,
+          ukuran, posisi, atau properti gaya lainnya yang ingin Anda terapkan.
+        - gunakan map untuk perulangan serta pasang index
+        - import dan pasang Link dari react-scroll untuk scrolling page
+    3.  Header.jsx
+        - rafc
+        - import dan pasang Nav
+        - styling dengan menggunakan props
+    4.  Footer.jsx
+        - rafc
+    5.  App.jsx
+        - import dan pasang:
+            - Header
+            - About
+            - Blog
+            - Contact
+            - Footer
+    6.  index.css
+        - styling untuk warna menyala pada menu ketika berada pada section yang dituju
+        - .active {
+            @apply text-accent;
+          }
+    7.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - akan ada menu pada head dari halaman web
+        - jika di klik setiap menu akan menuju section yang di klik
+          contoh klik about halaman akan scroll ke section/bagian about dan seterusnya
