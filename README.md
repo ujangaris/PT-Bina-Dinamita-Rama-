@@ -98,3 +98,23 @@ Currently, two official plugins are available:
         - akan ada menu pada head dari halaman web
         - jika di klik setiap menu akan menuju section yang di klik
           contoh klik about halaman akan scroll ke section/bagian about dan seterusnya
+
+### Navbar Device mobile & Dekstop
+
+      Todo:
+    1.  src/assets/img/logo.png
+        siapkan image logo dengan format png
+    2.  src/components/MobileNav.jsx
+        - rafc
+        - pasang props containerStyles
+        - pada className pasang props containerStyles
+    3.  Header.jsx
+        - Logo
+        - mobile nav - hidden on large device
+            - styling dengan containerStyles
+        - dekstop nav - hidden on small device
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - perkecil dan perbesar ukuran layar,
+          navbar menu akan ada yang mengilang dan muncul
