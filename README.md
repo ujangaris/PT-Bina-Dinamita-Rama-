@@ -118,3 +118,29 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - perkecil dan perbesar ukuran layar,
           navbar menu akan ada yang mengilang dan muncul
+
+### Navbar active ketika di scroll
+
+      Todo:
+    1.  Header.jsx
+        - pasang hook untuk header active
+        - pasang useEffect
+            - buat function handleScroll
+                - detect scroll
+                - add scroll event
+                - clear scroll event
+        - pada className pasang headerActive sebagai logic
+        - pada class juga dipasang opacity agar ketika di scroll akan transparan
+        - pasang console.log untuk melihat/mentest headerActive
+          siapkan image logo dengan format png
+    2.  Nav.jsx
+        - update offset agar tidak scroll terlalu jauh
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik kanan pada browser kemudian pilih inspect element
+        - pada inspect element pilih console
+        - klik menu about dkk
+        - jika pada console tertulis true maka setup yang kita lakukan berhasil
+        - perhatikan juga pada navbar akan ada perubahan ukuran
+          dan ada transisi transparan saat halaman di scroll
