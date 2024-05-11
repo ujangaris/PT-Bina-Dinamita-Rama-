@@ -144,3 +144,11 @@ Currently, two official plugins are available:
         - jika pada console tertulis true maka setup yang kita lakukan berhasil
         - perhatikan juga pada navbar akan ada perubahan ukuran
           dan ada transisi transparan saat halaman di scroll
+
+### perbaiki Navbar active ketika di scroll
+
+      Todo:
+    1.  Nav.jsx
+        - update data object pada links offset agar tidak tabrakan
+    2.  Header.jsx
+        - perbaiki ukuran tinggi header menjadi 100px dan ketika di scroll menjadi 80px

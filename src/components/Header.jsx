@@ -24,8 +24,8 @@ export const Header = () => {
   return (
     <div
       className={`${
-        headerActive ? "h-[100px] bg-opacity-70" : "h-[124px]"
-      } fixed left-0 right-0 w-full bg-white h-[100px]`}
+        headerActive ? "h-[80px] bg-opacity-70" : "h-[100px]"
+      } fixed  top-0 left-0 right-0 w-full bg-white h-[100px] transition-all z-50`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* Logo */}
