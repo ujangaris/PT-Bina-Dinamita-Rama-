@@ -33,5 +33,5 @@
 }
 
 .active {
-  @apply text-accent;
+  @apply text-accent border-b-2 border-accent font-bold;
 }

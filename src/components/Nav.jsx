@@ -19,6 +19,7 @@ export const Nav = ({ containerStyles }) => {
             spy
             activeClass="active"
             key={index}
+            className="hover:text-accent hover:border-b-4 border-accent  font-bold text-primary-100"
           >
             {link.name}
           </ScrollLink>

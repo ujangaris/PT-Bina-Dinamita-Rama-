@@ -21,6 +21,7 @@ export default {
           200: "#151515",
           300: "#111",
         },
+        hijauMuda: "#10CA9C",
         accent: "#29BF08",
       },
       fontFamily: {

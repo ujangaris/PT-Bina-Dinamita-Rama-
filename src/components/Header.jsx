@@ -4,11 +4,16 @@ import { Link } from "react-scroll";
 import logo from "../assets/img/logo.png";
 import { useEffect, useState } from "react";
 import { MdMenu, MdOutlineClose } from "react-icons/md";
+import flagEnglish from "../assets/img/flag-english.png";
+import flagIndonesia from "../assets/img/flag-indpnesia.png";
+import cv from "../assets/img/mdi_file-send-outline.png";
 
 export const Header = () => {
   // pasang hook untuk header active
   const [headerActive, setHeaderActive] = useState(false);
   const [openNav, setOpenNav] = useState(false);
+  const [language, setLanguage] = useState("english"); // Default language is English
+  const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,7 +27,16 @@ export const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  console.log(headerActive);
+  // console.log(headerActive);
+
+  const toggleLanguage = () => {
+    setShowDropdown(!showDropdown); // Toggle dropdown visibility
+  };
+  // select language
+  const selectLanguage = (selectedLanguage) => {
+    setLanguage(selectedLanguage);
+    setShowDropdown(false); // Hide dropdown after language is selected
+  };
   return (
     <div
       className={`${
@@ -46,9 +60,51 @@ export const Header = () => {
           flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium text-white transition-all lg:hidden`}
         />
         {/* dekstop nav - hidden on small device */}
-        <Nav containerStyles="flex gap-4 hidden lg:flex" />
-        {/* hide/open menu button */}
-        <div>
+        <Nav containerStyles="flex gap-4 hidden lg:flex uppercase " />
+
+        {/* send cv & language */}
+        <div className=" flex item-center gap-3">
+          <div className="relative">
+            <img
+              src={language === "english" ? flagEnglish : flagIndonesia}
+              alt="language flag"
+              className="rounded h-5 mt-2 lg:mt-1 lg:h-[26px] cursor-pointer"
+              onClick={toggleLanguage}
+            />
+
+            {/* Dropdown content */}
+            {showDropdown && (
+              <div className="absolute right-0 top-full mt-1 w-40 bg-white rounded-lg shadow-lg overflow-hidden">
+                <div
+                  className="py-2 px-4 flex items-center hover:bg-gray-100 cursor-pointer"
+                  onClick={() => selectLanguage("indonesian")}
+                >
+                  <img
+                    src={flagIndonesia}
+                    alt="Indonesian"
+                    className="h-5 mr-2"
+                  />
+                  Indonesian
+                </div>
+                <div
+                  className=" py-2 px-4 flex items-center hover:bg-gray-100 cursor-pointer"
+                  onClick={() => selectLanguage("english")}
+                >
+                  <img src={flagEnglish} alt="English" className="h-5 mr-2" />
+                  English
+                </div>
+              </div>
+            )}
+          </div>
+          <button className="flex items-center bg-hijauMuda rounded-full h-7 py-2 px-2 mt-1 font-bold  text-white text-xs hover:bg-hijauMuda/70">
+            <p className="">Send CV </p>
+            <span>
+              <img src={cv} alt="cv" className="h-4 " />
+            </span>
+          </button>
+
+          {/* hide/open menu button */}
+
           <button
             onClick={() => setOpenNav(!openNav)}
             className="text-primary-100 lg:hidden transition-all "
@@ -58,7 +114,7 @@ export const Header = () => {
                 className={`text-4xl transition-opacity duration-500 opacity-100 hover:opacity-80`}
               />
             ) : (
-              <MdMenu className="text-4xl transition-opacity duration-500 opacity-80 hover:opacity-0" />
+              <MdMenu className="text-4xl transition-opacity duration-500 opacity-100 hover:opacity-80" />
             )}
           </button>
         </div>

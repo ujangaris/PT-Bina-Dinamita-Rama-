@@ -184,3 +184,30 @@ Currently, two official plugins are available:
         - pada browser coba ke device mobile akan ada menu dengan tampilan mobile
         - kemudian klik togle menu, akan ada menu yang tampil dan togle menu akan berubah jd x
         - jika di klik sekali lagi menu akan hilang dan togle menjadi togle humberger
+
+### Menu send cv & language
+
+      Todo:
+    1.  tailwind.config.js
+        - tambahkan colors hijauMuda
+    2.  persiapkan image/icon bendera indonesia, english dan icon send
+        - src/assets/img/flag-english.png
+        - src/assets/img/flag-indonesia.png
+        - src/assets/img/flag-mdi-file-send-outline.png
+    3.  Nav.jsx
+        - tambahkan className hover:text-accent agar ketika di hover akan menampilkan text-accent
+    4.  Header.jsx
+        - import dan pasang semua image/icon
+        - pasang hooks language untuk logic pilihan language nya
+        - pasang hooks showDropdown untuk logic dropdown nya
+        - buat  function Toggle dropdown visibility
+          ini bertujuan ketika dropdown di pilih akan langsung menghilang
+        - buat function select language
+            - pasang function Togle dropdown visibility
+        - send cv & language
+            - Dropdown content
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada browser coba responsive device dari web yang dibuat
+        - pada menu home, about dll jika di sorot dengan cursor akan ada hover
