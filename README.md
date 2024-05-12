@@ -152,3 +152,15 @@ Currently, two official plugins are available:
         - update data object pada links offset agar tidak tabrakan
     2.  Header.jsx
         - perbaiki ukuran tinggi header menjadi 100px dan ketika di scroll menjadi 80px
+
+### Tampilan menu pada device mobile
+
+      Todo:
+    1.  MobileNav.jsx
+        - copy code dari Nav dan pastekan
+    2.  Header.jsx
+        - styling MobileNav.jsx
+    3.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada browser coba ke device mobile akan ada menu dengan tampilan mobile

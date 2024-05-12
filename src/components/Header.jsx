@@ -33,7 +33,11 @@ export const Header = () => {
           <img src={logo} alt="logo" className="h-7 md:h-9 lg:h-10" />
         </Link>
         {/* mobile nav - hidden on large device */}
-        <MobileNav containerStyles="lg:hidden" />
+        <MobileNav
+          containerStyles={`${
+            headerActive ? "top-[80px]" : "top-[100px]"
+          } flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium lg:hidden`}
+        />
         {/* dekstop nav - hidden on small device */}
         <Nav containerStyles="flex gap-4 hidden lg:flex" />
       </div>
