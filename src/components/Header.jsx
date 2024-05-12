@@ -3,10 +3,12 @@ import { MobileNav } from "./MobileNav";
 import { Link } from "react-scroll";
 import logo from "../assets/img/logo.png";
 import { useEffect, useState } from "react";
+import { MdMenu, MdOutlineClose } from "react-icons/md";
 
 export const Header = () => {
   // pasang hook untuk header active
   const [headerActive, setHeaderActive] = useState(false);
+  const [openNav, setOpenNav] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -34,12 +36,32 @@ export const Header = () => {
         </Link>
         {/* mobile nav - hidden on large device */}
         <MobileNav
-          containerStyles={`${
-            headerActive ? "top-[80px]" : "top-[100px]"
-          } flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium lg:hidden`}
+          containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
+          ${
+            openNav
+              ? "max-h-max pt-8 pb-10 border-t border-white/10"
+              : "max-h-0 pt-0 pb-0 overflow-hidden border-white/0"
+          }
+          
+          flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium text-white transition-all lg:hidden`}
         />
         {/* dekstop nav - hidden on small device */}
         <Nav containerStyles="flex gap-4 hidden lg:flex" />
+        {/* hide/open menu button */}
+        <div>
+          <button
+            onClick={() => setOpenNav(!openNav)}
+            className="text-primary-100 lg:hidden transition-all "
+          >
+            {openNav ? (
+              <MdOutlineClose
+                className={`text-4xl transition-opacity duration-500 opacity-100 hover:opacity-80`}
+              />
+            ) : (
+              <MdMenu className="text-4xl transition-opacity duration-500 opacity-80 hover:opacity-0" />
+            )}
+          </button>
+        </div>
       </div>
     </div>
   );

@@ -164,3 +164,23 @@ Currently, two official plugins are available:
         - jalankan server: npm run dev
         - http://localhost:5173/
         - pada browser coba ke device mobile akan ada menu dengan tampilan mobile
+
+### Togle menu mobile
+
+      Todo:
+    1.  MobileNav.jsx
+        - perbaikan nilai offset
+    2.  Header.jsx
+        - import dan pasang MdMenu & MdOutlineClose dari react-icon
+        - pasang hooks openNav untuk logic nya
+        - pasang logic openNav pada class navMobile
+          ini bertujuan ketika togle menu di klik akan menyembunyikan semua menu
+        - hide/open menu button
+          pasang openNav sebagai logic untuk merubah tampilan dri togle menu
+          jika menu tampil maka togle jd x jika menu hilang maka togle jadi hamburger togle
+    3.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada browser coba ke device mobile akan ada menu dengan tampilan mobile
+        - kemudian klik togle menu, akan ada menu yang tampil dan togle menu akan berubah jd x
+        - jika di klik sekali lagi menu akan hilang dan togle menjadi togle humberger
