@@ -33,5 +33,8 @@
 }
 
 .active {
-  @apply text-accent border-b-2 border-accent font-bold;
+  @apply text-primary-200 border-b-2 border-accent font-bold;
+}
+.active2 {
+  @apply text-accent  font-bold;
 }

@@ -2,14 +2,15 @@ import { Link as ScrollLink } from "react-scroll";
 
 const links = [
   { name: "home", target: "home", offset: -70 },
-  { name: "about", target: "about", offset: -50 },
-  { name: "blog", target: "blog", offset: -35 },
-  { name: "contact", target: "contact", offset: -30 },
+  { name: "about", target: "about", offset: -55 },
+  { name: "blog", target: "blog", offset: -50 },
+  { name: "job", target: "job", offset: -50 },
+  { name: "contact", target: "contact", offset: -40 },
 ];
 
-export const MobileNav = ({ containerStyles }) => {
+export const NavEnglish = ({ containerStyles }) => {
   return (
-    <nav className={containerStyles}>
+    <div className={containerStyles}>
       {links.map((link, index) => {
         return (
           <ScrollLink
@@ -19,11 +20,12 @@ export const MobileNav = ({ containerStyles }) => {
             spy
             activeClass="active"
             key={index}
+            className="hover:text-accent hover:border-b-4 border-accent  font-regular text-primary-100"
           >
             {link.name}
           </ScrollLink>
         );
       })}
-    </nav>
+    </div>
   );
 };

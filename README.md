@@ -211,3 +211,36 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - pada browser coba responsive device dari web yang dibuat
         - pada menu home, about dll jika di sorot dengan cursor akan ada hover
+
+### membuat menu kedalam 2 bahasa
+
+      Todo:
+    1.  NavEnglish.jsx
+        - ini rubah dari Nav.jsx saja
+    2.  NavIndonesia.jsx
+        - ini copas code dari Nav.jsx saja kemudian modifikasi
+    3.  MobileNavEnglish.jsx
+        - ini rubah dari MobileNav.jsx saja
+        - pada activeClass gunakan isi dengan active2
+    4.  MobileNavIndonesia.jsx
+        - ini copas code dari MobileNav.jsx saja kemudian modifikasi
+        - pada activeClass gunakan isi dengan active2
+    5.  index.css
+        - tabahkan style active2
+          ini agar menu  memiliki hover pada tampilan mobile
+    6.  Header.jsx
+        - pada hooks language buat agar data language tersimpan kedalam localstorage
+        - pada select language pasang localstorage yang kita pasang td
+        - buat logic pada dekstop nav - hidden on small device
+          dimana jika pada localstorage terbaca language = indonesia
+          maka menu indonesi yang akan tampil dan begitupun sebaliknya
+        - buat logic pada mobile nav - hidden on large device
+          dimana jika pada localstorage terbaca language = indonesia
+          maka menu indonesi yang akan tampil dan begitupun sebaliknya
+    7.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada browser coba klik menu language/icon bendera
+        - jika dipilih indonesi maka menu akan menampilkan menu indonesia
+          begitu pun sebaliknya
+        - meski di refresh menu akan bertahan pada menu language yang dipilih

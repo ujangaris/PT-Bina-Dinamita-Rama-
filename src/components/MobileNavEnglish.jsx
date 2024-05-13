@@ -4,12 +4,13 @@ const links = [
   { name: "home", target: "home", offset: -70 },
   { name: "about", target: "about", offset: -55 },
   { name: "blog", target: "blog", offset: -50 },
+  { name: "job", target: "job", offset: -50 },
   { name: "contact", target: "contact", offset: -40 },
 ];
 
-export const Nav = ({ containerStyles }) => {
+export const MobileNavEnglish = ({ containerStyles }) => {
   return (
-    <div className={containerStyles}>
+    <nav className={containerStyles}>
       {links.map((link, index) => {
         return (
           <ScrollLink
@@ -17,14 +18,13 @@ export const Nav = ({ containerStyles }) => {
             to={link.target}
             smooth
             spy
-            activeClass="active"
+            activeClass="active2"
             key={index}
-            className="hover:text-accent hover:border-b-4 border-accent  font-bold text-primary-100"
           >
             {link.name}
           </ScrollLink>
         );
       })}
-    </div>
+    </nav>
   );
 };

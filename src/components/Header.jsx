@@ -1,5 +1,4 @@
-import { Nav } from "./Nav";
-import { MobileNav } from "./MobileNav";
+import { NavEnglish } from "./NavEnglish";
 import { Link } from "react-scroll";
 import logo from "../assets/img/logo.png";
 import { useEffect, useState } from "react";
@@ -7,12 +6,17 @@ import { MdMenu, MdOutlineClose } from "react-icons/md";
 import flagEnglish from "../assets/img/flag-english.png";
 import flagIndonesia from "../assets/img/flag-indpnesia.png";
 import cv from "../assets/img/mdi_file-send-outline.png";
+import { NavIndonesia } from "./NavIndonesia";
+import { MobileNavIndonesia } from "./MobileNavIndonesia";
+import { MobileNavEnglish } from "./MobileNavEnglish";
 
 export const Header = () => {
   // pasang hook untuk header active
   const [headerActive, setHeaderActive] = useState(false);
   const [openNav, setOpenNav] = useState(false);
-  const [language, setLanguage] = useState("english"); // Default language is English
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "english"
+  );
   const [showDropdown, setShowDropdown] = useState(false);
 
   useEffect(() => {
@@ -35,6 +39,7 @@ export const Header = () => {
   // select language
   const selectLanguage = (selectedLanguage) => {
     setLanguage(selectedLanguage);
+    localStorage.setItem("language", selectedLanguage);
     setShowDropdown(false); // Hide dropdown after language is selected
   };
   return (
@@ -49,8 +54,9 @@ export const Header = () => {
           <img src={logo} alt="logo" className="h-7 md:h-9 lg:h-10" />
         </Link>
         {/* mobile nav - hidden on large device */}
-        <MobileNav
-          containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
+        {language === "english" ? (
+          <MobileNavEnglish
+            containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
           ${
             openNav
               ? "max-h-max pt-8 pb-10 border-t border-white/10"
@@ -58,9 +64,25 @@ export const Header = () => {
           }
           
           flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium text-white transition-all lg:hidden`}
-        />
+          />
+        ) : (
+          <MobileNavIndonesia
+            containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
+          ${
+            openNav
+              ? "max-h-max pt-8 pb-10 border-t border-white/10"
+              : "max-h-0 pt-0 pb-0 overflow-hidden border-white/0"
+          }
+          
+          flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium text-white transition-all lg:hidden`}
+          />
+        )}
         {/* dekstop nav - hidden on small device */}
-        <Nav containerStyles="flex gap-4 hidden lg:flex uppercase " />
+        {language === "english" ? (
+          <NavEnglish containerStyles="flex gap-4 hidden lg:flex uppercase " />
+        ) : (
+          <NavIndonesia containerStyles="flex gap-4 hidden lg:flex uppercase " />
+        )}
 
         {/* send cv & language */}
         <div className=" flex item-center gap-3">
