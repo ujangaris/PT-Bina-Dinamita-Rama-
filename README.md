@@ -244,3 +244,21 @@ Currently, two official plugins are available:
         - jika dipilih indonesi maka menu akan menampilkan menu indonesia
           begitu pun sebaliknya
         - meski di refresh menu akan bertahan pada menu language yang dipilih
+
+### Hero section
+
+      Todo:
+    1.  src/assets/img/bg-hero.png
+        - siapkan asset image untuk background hero
+    2.  Hero.jsx
+        - styling halaman hero
+        - pelapis image agar ada opacity dari warna hitam sekitar 70%
+        - kasih nilai z index untuk pelaspis sebanyak 10, agar berada diatas image
+        - untuk tulisan kasih z index 20 harus berda diatas pelapis image
+    3.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - pada browser coba klik menu language/icon bendera
+        - jika dipilih indonesi maka menu akan menampilkan menu indonesia
+          begitu pun sebaliknya
+        - meski di refresh menu akan bertahan pada menu language yang dipilih
