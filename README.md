@@ -317,3 +317,18 @@ Currently, two official plugins are available:
         - klik menu language/icon bendera
         - jika berhasil pada bagian contact akan mengikuti language yang dipilih
         - noted: sementara masih merefresh halaman untuk menganti language
+
+### Form Contact language
+
+      Todo:
+    1.  FormContactIndonesia.jsx
+        - duplikat file form contact kemudian modifikasi kedalam bahasa indonesia
+    2.  Footer.jsx
+        - import dan pasang FormContactIndonesia
+        - pasang hooks for language
+        - buat logic contact for language
+    3.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu language/icon bendera
+        - jika berhasil pada bagian form contact akan mengikuti language yang dipilih

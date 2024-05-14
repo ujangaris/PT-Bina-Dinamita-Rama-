@@ -1,6 +1,8 @@
 import logo from "../assets/img/logo-putih.png";
 import { Link as ScrollLink } from "react-scroll";
 import { FormContact } from "./FormContact";
+import { FormContactIndonesia } from "./FormContactIndonesia";
+import { useState } from "react";
 
 const links = [
   { name: "home", target: "home", offset: -70 },
@@ -11,9 +13,13 @@ const links = [
 ];
 
 export const Footer = () => {
+  // hooks for language
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") || "english"
+  );
   return (
     <>
-      <FormContact />
+      {language === "english" ? <FormContact /> : <FormContactIndonesia />}
       <div className="h-[30vh] bg-primary-300">
         <footer className=" w-screen -mt-[230px]  bg-black">
           <div className="container mx-auto grid md:grid-cols-6 pt-[400px] gap-x-10  gap-y-6">
