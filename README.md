@@ -297,3 +297,23 @@ Currently, two official plugins are available:
         - jalankan server: npm run dev
         - http://localhost:5173/
         - klik menu contact, akan ada tampilan contact yang menyatu dengan footer
+
+### Contact language
+
+      Todo:
+    1.  ContactIndonesia.jsx
+        - duplikat file contact kemudian modifikasi kedalam bahasa indonesia
+    2.  Header.jsx
+        - Reload the page to apply the new language
+          ini sementara digunakan agar ketika language di ubah
+          section contact dll yang lain ikut berubah
+    3.  App.jsx
+        - import dan pasang ContactIndonesia
+        - pasang hooks for language
+        - buat logic contact for language
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu language/icon bendera
+        - jika berhasil pada bagian contact akan mengikuti language yang dipilih
+        - noted: sementara masih merefresh halaman untuk menganti language

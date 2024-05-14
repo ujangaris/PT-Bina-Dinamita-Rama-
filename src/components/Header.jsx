@@ -40,6 +40,7 @@ export const Header = () => {
   const selectLanguage = (selectedLanguage) => {
     setLanguage(selectedLanguage);
     localStorage.setItem("language", selectedLanguage);
+    window.location.reload(); // Reload the page to apply the new language
     setShowDropdown(false); // Hide dropdown after language is selected
   };
   return (
