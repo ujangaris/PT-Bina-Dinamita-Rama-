@@ -262,3 +262,18 @@ Currently, two official plugins are available:
         - jika dipilih indonesi maka menu akan menampilkan menu indonesia
           begitu pun sebaliknya
         - meski di refresh menu akan bertahan pada menu language yang dipilih
+
+### Footer section
+
+      Todo:
+    1.  src/assets/img/logo-putih.png
+        - siapkan asset image untuk logo footer
+    2.  Footer.jsx
+        - gunakan class container & mx-auto agar jarak kanan kiri sama dengan header
+        - styling halaman footer
+        - agar menu dapat di croll otomatis buat copy object links yang ada pada  NavEnglish.jsx
+        - pasang map untuk melakukan perulangan ikuti langkah seperti pada NavEnglish.jsx
+    3.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - scroll sampai ke bagian paling bawah footer berada
