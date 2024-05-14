@@ -277,3 +277,23 @@ Currently, two official plugins are available:
         - jalankan server: npm run dev
         - http://localhost:5173/
         - scroll sampai ke bagian paling bawah footer berada
+
+### Contact section
+
+      Todo:
+    1.  src/assets/img/image-contact.png
+        - siapkan asset image untuk image contact
+    2.  FormContact.jsx
+        - rafc
+        - styling form contact
+        - pasang z index agar mengambang/berada di dimensi berbeda 1 tingkat imagenya
+    3.  Footer.jsx
+        - import dan pasang FormContact
+    4.  Contact.jsx
+        - styling contact
+        - import dan pasang Footer
+        - peta kita hide terlebih dahulu
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu contact, akan ada tampilan contact yang menyatu dengan footer
