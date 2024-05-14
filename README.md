@@ -332,3 +332,20 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - klik menu language/icon bendera
         - jika berhasil pada bagian form contact akan mengikuti language yang dipilih
+
+### Hero language
+
+      Todo:
+    1.  HeroIndonesia.jsx
+        - duplikat file Hero kemudian modifikasi kedalam bahasa indonesia
+    2.  Hero.jsx
+        - ubah bahasa kedalam bahasa ingris
+    3.  App.jsx
+        - import dan pasang HeroIndonesia
+        - pasang logic language
+        - pasang pada header setLanguage={setLanguage} ini untuk menghilangkan problems
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu language/icon bendera
+        - jika berhasil pada bagian Hero akan mengikuti language yang dipilih
