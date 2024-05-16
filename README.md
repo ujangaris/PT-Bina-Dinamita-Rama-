@@ -349,3 +349,21 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - klik menu language/icon bendera
         - jika berhasil pada bagian Hero akan mengikuti language yang dipilih
+
+### About Section
+
+      Todo:
+    1.  src/assets/img
+        - siapkan 3 image
+    2.  About.jsx
+        - styling about
+    3.  mengatur offset
+        - NavEnglish.jsx
+        - NavIndonseia.jsx
+        - MobileNavEnglish.jsx
+        - MobileNavIndonseia.jsx
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu about
+        - akan tampil halaman about

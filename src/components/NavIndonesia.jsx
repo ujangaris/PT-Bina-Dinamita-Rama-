@@ -1,8 +1,8 @@
 import { Link as ScrollLink } from "react-scroll";
 
 const links = [
-  { name: "beranda", target: "beranda", offset: -70 },
-  { name: "tentang Kami", target: "tentang Kami", offset: -55 },
+  { name: "beranda", target: "beranda", offset: -90 },
+  { name: "tentang Kami", target: "tentang Kami", offset: -90 },
   { name: "blog", target: "blog", offset: -50 },
   { name: "lowongan", target: "lowongan", offset: -50 },
   { name: "Kontak", target: "Kontak", offset: -40 },
