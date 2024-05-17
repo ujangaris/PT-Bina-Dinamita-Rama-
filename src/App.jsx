@@ -7,6 +7,7 @@ import { Hero } from "./components/Hero";
 import { ContactIndonesia } from "./components/ContactIndonesia";
 import { HeroIndonesia } from "./components/HeroIndonesia";
 import { TentangKami } from "./components/TentangKami";
+import { Info } from "./components/Info";
 
 function App() {
   // hooks for language
@@ -21,7 +22,8 @@ function App() {
         {language === "indonesia" ? <HeroIndonesia /> : <Hero />}
 
         {language === "indonesia" ? <TentangKami /> : <About />}
-        <Blog />
+        {language === "indonesia" ? <Info /> : <Blog />}
+
         {language === "indonesia" ? <ContactIndonesia /> : <Contact />}
         {console.log(language)}
       </main>

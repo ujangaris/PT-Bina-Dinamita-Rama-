@@ -3,16 +3,16 @@ import imageEvent from "../assets/img/image-event.png";
 import imageNews1 from "../assets/img/image-news1.png";
 import imageNews2 from "../assets/img/image-news2.png";
 
-export const Blog = () => {
+export const Info = () => {
   return (
     <div className=" bg-green-400" id="blog">
       <div className="info mt-20">
         <div className="container mx-auto text-center mb-10 pt-32">
           <h4 className="font-bold text-3xl md:text-5xl text-[#927F7F]  ">
-            Blog
+            Info
           </h4>
           <p className="pt-2  md:text-base text-xs text-[#717171] px-10 ">
-            News & Event
+            Berita & Kegiatan
           </p>
         </div>
         <div className=" flex flex-wrap   mx-auto  xl:px-4">
@@ -20,7 +20,7 @@ export const Blog = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src={imageNews1} alt="news" className="w-full" />
               <div className="py-8 px-6">
-                <h6 className="text-[#927F7F] font-medium mb-4">News</h6>
+                <h6 className="text-[#927F7F] font-medium mb-4">Berita</h6>
                 <h3 className="mb-4">
                   <a
                     href="#"
@@ -39,7 +39,7 @@ export const Blog = () => {
                     href="#"
                     className="flex text-2xl font-semibold text-teal-400 hover:text-[#29BF08]"
                   >
-                    <span>Read More</span>
+                    <span>Baca Selengkapnya</span>
                     <FiArrowUpRight className="text-4xl" />
                   </a>
                 </h2>
@@ -50,7 +50,7 @@ export const Blog = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src={imageEvent} alt="news" className="w-full" />
               <div className="py-8 px-6">
-                <h6 className="text-[#927F7F] font-medium mb-4">Event</h6>
+                <h6 className="text-[#927F7F] font-medium mb-4">Kegiatan</h6>
                 <h3 className="mb-4">
                   <a
                     href="#"
@@ -69,7 +69,7 @@ export const Blog = () => {
                     href="#"
                     className="flex text-2xl font-semibold text-teal-400 hover:text-[#29BF08]"
                   >
-                    <span>Read More</span>
+                    <span>Baca Selengkapnya</span>
                     <FiArrowUpRight className="text-4xl" />
                   </a>
                 </h2>
@@ -80,7 +80,7 @@ export const Blog = () => {
             <div className="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
               <img src={imageNews2} alt="news" className="w-full" />
               <div className="py-8 px-6">
-                <h6 className="text-[#927F7F] font-medium mb-4">News</h6>
+                <h6 className="text-[#927F7F] font-medium mb-4">Berita</h6>
                 <h3 className="mb-4">
                   <a
                     href="#"
@@ -99,7 +99,7 @@ export const Blog = () => {
                     href="#"
                     className="flex text-2xl font-semibold text-teal-400 hover:text-[#29BF08]"
                   >
-                    <span>Read More</span>
+                    <span>Baca Selengkapnya</span>
                     <FiArrowUpRight className="text-4xl" />
                   </a>
                 </h2>

@@ -405,3 +405,27 @@ Currently, two official plugins are available:
         - akan halaman sesuai langage yang di pilih
         - klik menu
         - halaman akan scroll otomatis sesuai menu yang di klik
+
+# Section Blog
+
+    Todo:
+    1.  src/assets/img
+        - siapkan 3 buah image
+    2.  Blog.jsx
+        - styling blog untuk menampilkan 3 card ukuran large device
+          medium device  2 card dan satunya kebawah,
+          small device 1 card sisanya kebawah
+        - import dan pasang image yang sudah di siapkan
+        - import dan pasang FiArrowUpRight dari ract icon
+    3.  Info.jsx
+        - duplicate file Blog kemudian namakan dengan info dan
+          modifikasi kedalam bahasa indoneisa
+    4.  App.jsx
+        - pasang logic language pada Blog dan Info
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu blog/info
+        - halaman akan scroll kehalaman blog/info
+        - akan ada tampilan blog/info dengan 3 card berisi
+          image dan text
