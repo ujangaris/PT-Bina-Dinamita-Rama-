@@ -1,17 +1,17 @@
 import imageAbout1 from "../assets/img/image-about-1.png";
 import imageAbout2 from "../assets/img/image-about-2.png";
 import imageAbout3 from "../assets/img/image-about-3.png";
-export const About = () => {
+export const TentangKami = () => {
   return (
     <div className="mb-20" id="about">
       <div className="about container mx-auto max-w-7xl">
         <div className="w-full  mx-auto">
           <div className="max-w-xl mx-auto text-center mb-10 md:mb-20 ">
             <h4 className="font-bold text-3xl md:text-5xl text-[#927F7F]  pt-20">
-              About Us
+              Tentang Kami
             </h4>
             <p className="pt-5  md:text-base text-xs text-[#717171]  mb">
-              We have worked with over 200+ clients.
+              Kami telah bekerja dengan 200+ klien
             </p>
           </div>
         </div>
@@ -28,19 +28,22 @@ export const About = () => {
               PT. BINA <span className="text-red-500">DINAMITA</span> RAMA
             </h1>
             <p className="lg:text-xl font-medium text-slate-500 tracking-wide text-justify mb-3">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ever since its first
-              establishment, our company has always focused on training and
-              delivering the best human resource in order to fulfill the demand
-              of labor from overseas. Aside from making our movement in other
-              countries, our company also focuses on improving the living
-              standard of our people through providing employment.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Perusahaan kami
+              didirikan dengan tekad untuk melatih dan menghasilkan sumber daya
+              manusia yang berkualitas. Hal ini bertujuan untuk memenuhi
+              kebutuhan tenaga kerja di kancah internasional sesuai dengan
+              kualifikasi yang ada. Selain menyalurkan tenaga kerja secara
+              global, perusahaan kami juga fokus dalam membantu perbaikan
+              kehidupan masyarakat melalui pelayanan pemberian tenaga kerja.
             </p>
             <p className="lg:text-xl font-medium text-slate-500 tracking-wide text-justify">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We commit to maintain
-              our recruitment system based on professionalism. Through
-              dedicating on advancement and development of the resources, our
-              company strives to deliver the trained and capable human resource
-              based on the requirement and needs of our clients.
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kami selalu berkomitmen
+              untuk mempertahankan kualitas rekrutmen sumber daya manusia yang
+              berdasarkan nilai profesionalisme. Dedikasi yang kami berikan
+              melalui peningkatan dan pengembangan sumber daya adalah untuk
+              memberikan sumber daya manusia yang terlatih dan kompeten.
+              Diharapkan dengan semangat dan usaha yang baik, kami dapat
+              memberikan pelayanan yang terbaik dan memuaskan untuk klien kami.
             </p>
           </div>
         </div>

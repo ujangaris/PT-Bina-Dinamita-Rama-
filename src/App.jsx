@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { ContactIndonesia } from "./components/ContactIndonesia";
 import { HeroIndonesia } from "./components/HeroIndonesia";
+import { TentangKami } from "./components/TentangKami";
 
 function App() {
   // hooks for language
@@ -18,7 +19,8 @@ function App() {
       <main className="h-screen w-full  ">
         <Header setLanguage={setLanguage} />
         {language === "english" ? <Hero /> : <HeroIndonesia />}
-        <About />
+
+        {language === "english" ? <About /> : <TentangKami />}
         <Blog />
         {language === "english" ? <Contact /> : <ContactIndonesia />}
         {console.log(language)}

@@ -367,3 +367,18 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - klik menu about
         - akan tampil halaman about
+
+### About language indonesia - inggris
+
+      Todo:
+    1.  components/TentangKami.jsx
+        - duplikasi file dari about kemudian modifikasi kedalam bahasa indonesia
+    2.  About.jsx
+        - modifikasi teks kedalam bahasa inggris
+    3.  App.jsx
+        - memasang logic language pada About & TentangKami
+    4.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu langue
+        - akan tampil halaman About & TentangKami
