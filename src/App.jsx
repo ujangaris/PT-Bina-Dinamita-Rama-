@@ -11,18 +11,18 @@ import { TentangKami } from "./components/TentangKami";
 function App() {
   // hooks for language
   const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "english"
+    localStorage.getItem("language") || "indonesia"
   );
 
   return (
     <>
       <main className="h-screen w-full  ">
         <Header setLanguage={setLanguage} />
-        {language === "english" ? <Hero /> : <HeroIndonesia />}
+        {language === "indonesia" ? <HeroIndonesia /> : <Hero />}
 
-        {language === "english" ? <About /> : <TentangKami />}
+        {language === "indonesia" ? <TentangKami /> : <About />}
         <Blog />
-        {language === "english" ? <Contact /> : <ContactIndonesia />}
+        {language === "indonesia" ? <ContactIndonesia /> : <Contact />}
         {console.log(language)}
       </main>
     </>

@@ -3,7 +3,7 @@ import imageAbout2 from "../assets/img/image-about-2.png";
 import imageAbout3 from "../assets/img/image-about-3.png";
 export const TentangKami = () => {
   return (
-    <div className="mb-20" id="about">
+    <div className="mb-20" id="tentangKami">
       <div className="about container mx-auto max-w-7xl">
         <div className="w-full  mx-auto">
           <div className="max-w-xl mx-auto text-center mb-10 md:mb-20 ">

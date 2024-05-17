@@ -382,3 +382,26 @@ Currently, two official plugins are available:
         - http://localhost:5173/
         - klik menu langue
         - akan tampil halaman About & TentangKami
+
+### default language indonesia & jalankan fungsi scroll otomatis dengan id
+
+      Todo:
+    1.  Header.jsx
+        - perbaiki logic default untuk language ubah enghlish menjadi indonesia
+    2.  perbaiki tulisan target agar dapat digunakan pada id
+        - NavIndonesia
+        - MobileNavIndonesia
+    3.  pasang id dengan nilai target yang telah di tetapkan agar
+        ketika di klik dapat scroll otomatis
+        - HeroIndonesia
+        - TentangKami
+        - ContactIndonesia
+    4.  App.jsx
+        - rubah default language menjadi indonesia
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu langue
+        - akan halaman sesuai langage yang di pilih
+        - klik menu
+        - halaman akan scroll otomatis sesuai menu yang di klik

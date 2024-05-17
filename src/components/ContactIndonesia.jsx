@@ -3,7 +3,7 @@ import { Footer } from "./Footer";
 
 export const ContactIndonesia = () => {
   return (
-    <div className=" bg-slate-200 " id="contact">
+    <div className=" bg-slate-200 " id="kontak">
       <div className="contact container mx-auto pt-32 mb-[500px] md:mb-[600px] lg:mb-[650px]">
         <div className="text-center">
           <h3 className="text-2xl font-bold text-[#29BF08]">Hubungi Kami</h3>

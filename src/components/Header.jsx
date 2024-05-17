@@ -15,7 +15,7 @@ export const Header = () => {
   const [headerActive, setHeaderActive] = useState(false);
   const [openNav, setOpenNav] = useState(false);
   const [language, setLanguage] = useState(
-    localStorage.getItem("language") || "english"
+    localStorage.getItem("language") || "indonesia"
   );
   const [showDropdown, setShowDropdown] = useState(false);
 
@@ -55,8 +55,8 @@ export const Header = () => {
           <img src={logo} alt="logo" className="h-7 md:h-9 lg:h-10" />
         </Link>
         {/* mobile nav - hidden on large device */}
-        {language === "english" ? (
-          <MobileNavEnglish
+        {language === "indonesia" ? (
+          <MobileNavIndonesia
             containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
           ${
             openNav
@@ -67,7 +67,7 @@ export const Header = () => {
           flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-base uppercase font-medium text-white transition-all lg:hidden`}
           />
         ) : (
-          <MobileNavIndonesia
+          <MobileNavEnglish
             containerStyles={`${headerActive ? "top-[80px]" : "top-[100px]"} 
           ${
             openNav
@@ -79,17 +79,17 @@ export const Header = () => {
           />
         )}
         {/* dekstop nav - hidden on small device */}
-        {language === "english" ? (
-          <NavEnglish containerStyles="flex gap-4 hidden lg:flex uppercase " />
-        ) : (
+        {language === "indonesia" ? (
           <NavIndonesia containerStyles="flex gap-4 hidden lg:flex uppercase " />
+        ) : (
+          <NavEnglish containerStyles="flex gap-4 hidden lg:flex uppercase " />
         )}
 
         {/* send cv & language */}
         <div className=" flex item-center gap-3">
           <div className="relative">
             <img
-              src={language === "english" ? flagEnglish : flagIndonesia}
+              src={language === "indonesia" ? flagIndonesia : flagEnglish}
               alt="language flag"
               className="rounded h-5 mt-2 lg:mt-1 lg:h-[26px] cursor-pointer"
               onClick={toggleLanguage}
@@ -100,14 +100,14 @@ export const Header = () => {
               <div className="absolute right-0 top-full mt-1 w-40 bg-white rounded-lg shadow-lg overflow-hidden">
                 <div
                   className="py-2 px-4 flex items-center hover:bg-gray-100 cursor-pointer"
-                  onClick={() => selectLanguage("indonesian")}
+                  onClick={() => selectLanguage("indonesia")}
                 >
                   <img
                     src={flagIndonesia}
-                    alt="Indonesian"
+                    alt="Indonesia"
                     className="h-5 mr-2"
                   />
-                  Indonesian
+                  Indonesia
                 </div>
                 <div
                   className=" py-2 px-4 flex items-center hover:bg-gray-100 cursor-pointer"

@@ -4,7 +4,7 @@ export const HeroIndonesia = () => {
   return (
     <div
       className="h-[100vh] w-full   bg-hero bg-cover bg-center bg-no-repeat flex flex-col gap-5 items-center justify-center "
-      id="home"
+      id="beranda"
     >
       <h1 className="text-accent text-3xl md:text-7xl text-center  uppercase z-20 tracking-wide">
         PT Bina <span className="text-white"> Dinamita</span> Rama
