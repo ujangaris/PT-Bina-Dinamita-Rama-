@@ -20,7 +20,7 @@ export const TentangKami = () => {
             <img
               src={imageAbout1}
               alt="image-about-1"
-              className="absolute bottom-0"
+              className="md:absolute md:bottom-0"
             />
           </div>
           <div className="right  md:order-2 ">
