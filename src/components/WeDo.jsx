@@ -6,7 +6,7 @@ export const WeDo = () => {
     <>
       <section className="we-do w-screen  bg-black mx-auto  h-96 mt-20 ">
         <div className="container mx-auto h-96 grid grid-col-1 md:grid-cols-2 items-center gap-4">
-          <div className="righ  h-80">
+          <div className="righ  h-80 text-center md:text-left">
             <h1 className="text-2xl lg:text-4xl font-bold text-white mb-10 tracking-wide ">
               Our activities
             </h1>
