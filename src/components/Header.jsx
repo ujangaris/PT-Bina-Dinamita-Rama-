@@ -119,8 +119,8 @@ export const Header = () => {
               </div>
             )}
           </div>
-          <button className="flex items-center bg-hijauMuda rounded-full h-7 py-2 px-2 mt-1 font-bold  text-white text-xs hover:bg-hijauMuda/70">
-            <p className="">Send CV </p>
+          <button className="flex items-center bg-hijauMuda rounded-full h-7 py-2 px-2 mt-1 font-bold   text-white text-xs hover:bg-hijauMuda/70">
+            <p className="hidden md:block ">Send CV </p>
             <span>
               <img src={cv} alt="cv" className="h-4 " />
             </span>
