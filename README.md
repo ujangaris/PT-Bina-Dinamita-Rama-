@@ -406,7 +406,7 @@ Currently, two official plugins are available:
         - klik menu
         - halaman akan scroll otomatis sesuai menu yang di klik
 
-# Section Blog
+### Section Blog
 
     Todo:
     1.  src/assets/img
@@ -429,3 +429,26 @@ Currently, two official plugins are available:
         - halaman akan scroll kehalaman blog/info
         - akan ada tampilan blog/info dengan 3 card berisi
           image dan text
+
+### Section We Do
+
+    Todo:
+    1.  src/assets/img
+        - siapkan 5 buah image
+    2.  WeDo.jsx
+        - styling WeDo untuk menampilkan 2 bagian yakni tulisan dan 5 image
+        - image ukuran large device medium device tampil,
+          small image menghilang
+        - import dan pasang image yang sudah di siapkan
+
+    3.  KegiatanKami.jsx
+        - duplicate file BlWeDoog kemudian namakan dengan KegiatanKami dan
+          modifikasi kedalam bahasa indoneisa
+    4.  App.jsx
+        - pasang logic language pada WeDo dan KegiatanKami
+    5.  pengujian pada browser:
+        - jalankan server: npm run dev
+        - http://localhost:5173/
+        - klik menu about/tentang kami
+        - halaman akan scroll kehalaman about/tentang kami
+        - di bagian bawah about/tentang kami , akan ada content baru

@@ -5,7 +5,7 @@ import imageNews2 from "../assets/img/image-news2.png";
 
 export const Blog = () => {
   return (
-    <div className=" bg-green-400" id="blog">
+    <div className=" " id="blog">
       <div className="info mt-20">
         <div className="container mx-auto text-center mb-10 pt-32">
           <h4 className="font-bold text-3xl md:text-5xl text-[#927F7F]  ">

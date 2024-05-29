@@ -8,6 +8,8 @@ import { ContactIndonesia } from "./components/ContactIndonesia";
 import { HeroIndonesia } from "./components/HeroIndonesia";
 import { TentangKami } from "./components/TentangKami";
 import { Info } from "./components/Info";
+import { WeDo } from "./components/WeDo";
+import { KegiatanKami } from "./components/KegiatanKami";
 
 function App() {
   // hooks for language
@@ -22,6 +24,7 @@ function App() {
         {language === "indonesia" ? <HeroIndonesia /> : <Hero />}
 
         {language === "indonesia" ? <TentangKami /> : <About />}
+        {language === "indonesia" ? <KegiatanKami /> : <WeDo />}
         {language === "indonesia" ? <Info /> : <Blog />}
 
         {language === "indonesia" ? <ContactIndonesia /> : <Contact />}

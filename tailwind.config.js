@@ -23,6 +23,7 @@ export default {
         },
         hijauMuda: "#10CA9C",
         accent: "#29BF08",
+        abu2: "#D9D9D9",
       },
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
@@ -30,6 +31,8 @@ export default {
       },
       backgroundImage: {
         hero: "url('./assets/img/bg-hero.png')",
+        kegiatan1: "url('./assets/img/kegiatan1.jpeg')",
+        kegiatan2: "url('./assets/img/kegiatan2.jpeg')",
       },
     },
   },
